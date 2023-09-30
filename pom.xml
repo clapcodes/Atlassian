@@ -17,7 +17,26 @@
     <name>hello-macro</name>
     <description>This is the com.clapcode.confluence.plugin:hello-macro plugin for Atlassian Confluence.</description>
     <packaging>atlassian-plugin</packaging>
-
+<repositories>
+    <repository>
+      <id>atlassian-public</id>
+      <url>https://packages.atlassian.com/maven/repository/public/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>atlassian-public</id>
+      <url>https://packages.atlassian.com/maven/repository/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
     <dependencies>
         <dependency>
             <groupId>com.atlassian.confluence</groupId>
